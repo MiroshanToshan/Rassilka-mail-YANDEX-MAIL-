@@ -1,22 +1,16 @@
-import smtplib
 import os
 from dotenv import load_dotenv
-
+from send import send_mail
 load_dotenv()
 
 
-moename = input("Ваше Имя: ")
-imyadruga = input("Имя друга: ")
+my_name = input("Ваше Имя: ")
+friend_name = input("Имя друга: ")
 my_mail = input("Ваша почта: ")
 friend_mail = input("Почта друга:  ")
-tema = input("Введите тему ")
+subject = input("Введите тему ")
 
 password = os.getenv("PASSWORD")
-
-zagolovok = f'''From: {my_mail}
-To: {friend_mail}
-Subject: {tema}
-Content-Type: text/plain; charset="UTF-8"'''
 
 text =  '''Привет, %friend_name%! %my_name% приглашает тебя на сайт %website%!
 
@@ -35,16 +29,9 @@ text =  '''Привет, %friend_name%! %my_name% приглашает тебя 
 Регистрируйся > %website%  
 На модули, которые еще не вышли, можно подписаться и получить уведомление о релизе сразу на имейл.'''
 text = text.replace("%website%", "https://boulderbugle.com/-133m2lwo")
-text= text.replace("%friend_name%", imyadruga)
-text = text.replace("%my_name%", moename)
+text= text.replace("%friend_name%", friend_name)
+text = text.replace("%my_name%", my_name)
 
-vse = f'''{zagolovok}
 
-{text}'''
-
-vse = vse.encode("UTF-8")
-
-server = smtplib.SMTP_SSL('smtp.yandex.ru:465')
-server.login(my_mail,password)
-server.sendmail(my_mail,friend_mail ,vse)
-server.quit()
+send_mail(my_mail=my_mail, friend_mail=friend_mail, subject=subject, password=password, text=text)
+send_mail(my_mail, friend_mail, subject, password , text)
