@@ -7,9 +7,8 @@ load_dotenv()
 my_name = input("Ваше Имя: ")
 friend_name = input("Имя друга: ")
 my_mail = input("Ваша почта: ")
-friend_mail = input("Почта друга:  ")
 subject = input("Введите тему ")
-
+mails = ["miroshantoshan@yandex.ru" , "sergeidesmod@yandex.ru" , "xuxlaevoleg@yandex.ru"]
 password = os.getenv("PASSWORD")
 
 text =  '''Привет, %friend_name%! %my_name% приглашает тебя на сайт %website%!
@@ -32,6 +31,5 @@ text = text.replace("%website%", "https://boulderbugle.com/-133m2lwo")
 text= text.replace("%friend_name%", friend_name)
 text = text.replace("%my_name%", my_name)
 
-
-send_mail(my_mail=my_mail, friend_mail=friend_mail, subject=subject, password=password, text=text)
-send_mail(my_mail, friend_mail, subject, password , text)
+for mail in mails:
+    send_mail(my_mail, mail, subject, password , text)
