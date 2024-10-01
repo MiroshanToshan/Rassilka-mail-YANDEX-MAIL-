@@ -1,2 +1,4 @@
 .env
 __pycache__
+mails.json
+text.txt

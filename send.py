@@ -1,16 +1,14 @@
 
 import smtplib
 
-
 def send_mail(my_mail, friend_mail, subject, password, text):
-    headers = f'''From: {my_mail}
-    To: {friend_mail}
-    Subject: {subject}
-    Content-Type: text/plain; charset="UTF-8"'''
-
+    headers =  f'''From: {my_mail}
+To: {friend_mail}
+Subject: {subject}
+Content-Type: text/plain; charset="UTF-8";'''
     final_letter = f'''{headers}
 
-    {text}'''
+{text}'''
 
     final_letter = final_letter.encode("UTF-8")
 
