@@ -50,5 +50,3 @@ text = text.replace("%my_name%", my_name)
 
 for mail in mails:
     send_mail(my_mail, mail, subject, password , text)
-
-
