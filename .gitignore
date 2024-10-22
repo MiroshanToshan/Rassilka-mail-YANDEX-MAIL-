@@ -1,4 +1,5 @@
 .env
 __pycache__
-mails.json
-text.txt
+main.py
+send.py
+

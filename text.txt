@@ -1,0 +1,3 @@
+Пример текста
+%my_name%
+%friend_name%
