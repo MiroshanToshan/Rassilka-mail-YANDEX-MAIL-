@@ -48,10 +48,10 @@ okno.geometry("720x480")
 
 subject_field = customtkinter.CTkEntry(okno, placeholder_text="")
 subject_field.insert(0, "") 
-subject_field.place(x=268, y=200)
+subject_field.place(x=268, y=130)
 
 subject_field_label= customtkinter.CTkLabel(okno, text="Введите тему ->", fg_color="transparent")
-subject_field_label.place(x=163, y=200)
+subject_field_label.place(x=163, y=130)
 
 
 
@@ -70,8 +70,6 @@ recipient_field_label.place(x=90, y=80)
 
 
 
-recipient_field_label = customtkinter.CTkLabel(okno, text="Введите ваше имя ->", fg_color="transparent")
-recipient_field_label.place(x=130, y=40)
 
 copyright = customtkinter.CTkLabel(okno, text="Все права защищены Defsender 2024 ©", fg_color="transparent", font=('Times 30',11) )
 copyright.place(x=10, y=450)
@@ -80,7 +78,7 @@ version = customtkinter.CTkLabel(okno, text="Beta 2.1", fg_color="transparent", 
 version.place(x=675, y=450)
 
 support = customtkinter.CTkLabel(okno, text="Написать в поддержку - defsender@yandex.ru", fg_color="transparent", font=('Times 30',13) )
-support.place(x=220, y=290)
+support.place(x=220, y=200)
 
 
 
@@ -93,11 +91,11 @@ def checkbox_event():
 check_var = customtkinter.StringVar(value="Отклонено")
 checkbox = customtkinter.CTkCheckBox(okno, text="Данные указаны верно", command=checkbox_event,
                                      variable=check_var, onvalue="Принято", offvalue="Отклонено")
-checkbox.place(x=250, y=330)
+checkbox.place(x=250, y=230)
 
 
 button = customtkinter.CTkButton(master=okno, text="Начать рассылку", command=start)
-button.place(relx=0.47, rely=0.8, anchor=customtkinter.CENTER)
+button.place(x=340,y=300, anchor=customtkinter.CENTER)
 
 
 
