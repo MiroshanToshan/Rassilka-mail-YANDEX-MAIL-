@@ -99,7 +99,7 @@ button.place(x=340,y=300, anchor=customtkinter.CENTER)
 
 
 
-button_image = customtkinter.CTkImage(Image.open("./cogwheel.png"), size=(30, 30))
+button_image = customtkinter.CTkImage(Image.open("./images/cogwheel.png"), size=(30, 30))
 button = customtkinter.CTkButton(master=okno, image = button_image, fg_color="transparent", text="", width=35, height=35, command=config)
 button.place(x=690 ,y=410, anchor=customtkinter.CENTER)
 
