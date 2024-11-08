@@ -1,3 +1,10 @@
+
+
+<p align="center">
+<img src="https://github.com/MiroshanToshan/Rassilka-mail-YANDEX-MAIL-/blob/main/images/logo.png" style="width:30%"/>
+</p>
+
+
 # ⚡ DefSender - программа для массовой рассылки
 DefSender - программа с простым и понятным функционалом, идеально подходящая для массовой рассылки вашей рекламы на почты!
 
