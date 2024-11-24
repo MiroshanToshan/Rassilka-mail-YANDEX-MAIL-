@@ -36,14 +36,14 @@ def config():
     main_label = customtkinter.CTkLabel(setting, text="Настройки", fg_color="transparent", font=('Times 30',35) )
     main_label.place(x=140, y=70)
 
-    my_mail_label = customtkinter.CTkLabel(setting, text="Ваша почта", fg_color="transparent", font=('Times 30',11) )
-    my_mail_label.place(x=95, y=150)
+    my_mail_label = customtkinter.CTkLabel(setting, text="Вашe имя", fg_color="transparent", font=('Times 30',11) )
+    my_mail_label.place(x=100, y=150)
 
-    password_label = customtkinter.CTkLabel(setting, text="Пароль от почты", fg_color="transparent", font=('Times 30',11) )
-    password_label.place(x=65, y=200)
+    password_label = customtkinter.CTkLabel(setting, text="Ваша почта", fg_color="transparent", font=('Times 30',11) )
+    password_label.place(x=95, y=200)
 
-    my_name_label = customtkinter.CTkLabel(setting, text="Ваше имя", fg_color="transparent", font=('Times 30',11) )
-    my_name_label.place(x=100, y=250)
+    my_name_label = customtkinter.CTkLabel(setting, text="Ваш пароль", fg_color="transparent", font=('Times 30',11) )
+    my_name_label.place(x=95, y=250)
 
 
 
