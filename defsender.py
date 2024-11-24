@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from send import send_mail
 import json 
 import argparse
+import PyInstaller
 import customtkinter
 from settings import config
 load_dotenv()
