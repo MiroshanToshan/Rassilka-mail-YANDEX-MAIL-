@@ -1,11 +1,11 @@
 import os
 from dotenv import load_dotenv
-from send import send_mail
+from system.send import send_mail
 import json 
 import argparse
 import PyInstaller
 import customtkinter
-from settings import config
+from system.settings import config
 load_dotenv()
 
 from tkinter import *
